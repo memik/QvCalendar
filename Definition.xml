@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ExtensionObject  Path="QvCalendar" Label="QV Calendar" Description="QV Calendar flex-selections"  PageHeight="100000">
+ <PropertiesPage Version="11" File="Properties.qvpp" /> 
+  <Dimension Label="Dimension1" Initial="" DropTarget=""/>
+<!--  <Text Label="Color1" Type="color" Initial="" Expression="#FCFD70"/>  -->
+  <Measurement Label="Measures" Require=""  Initial="" />
+<!--  <Text Label="Select" Type="select" Select="" SelectLabel="Select date field" Width="5" />  -->
+  <Initiate Name="Chart.Title" value="QV Calendar" />
+  <Initiate Name="Caption.Text" Value="QV Calendar flex-selections" />
+  <Initiate Name="Chart.BgColor.ColorHex" value="#FCFD70" />
+  
+  <Initiate Name="Layout.Normal.Width" Value="740" />
+  <Initiate Name="Layout.Normal.Height" Value="470" />
+</ExtensionObject>
