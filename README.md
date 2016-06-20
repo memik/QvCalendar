@@ -3,14 +3,12 @@
 Qliview 11 Extension Object 
 
 ## Description
-This project of extension was intented to make easier calendar selections in Qliview more particularly for multi-range selections. 
+This object extension makes it easy to make calendar selections in qlikview more particularly when multi-range selections is needed. 
 
 ## Object Properties
 
 ### The Field
-To be able to pass the selections you made on object on to qlikview data model you need to assign a field that holding date data 
-of the data model.
-The field must be containing number of dates, for instance if your date field is "myDate" then the field you attached to the object
+The field must contain number of dates, for instance if your date field is "myDate" then the field 
 should be num(myDate).
 
 ### Buttons
