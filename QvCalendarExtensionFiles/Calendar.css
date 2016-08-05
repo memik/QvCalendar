@@ -1,0 +1,147 @@
+
+#navigation {
+text-align: center;
+border: 0.5px;
+box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+border-bottom-color:#333;	
+background:  white;
+height:7.75%; 
+}
+input[type="button"]:disabled{
+position: absolute;	
+top: 1.5%;	
+box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+border:0.5px solid #fef4eb;
+background-color:#f4f4ed;
+color:#fdfdfd;
+font-size:1em;
+text-shadow:#b2e2f5 0 1px 0;
+}
+input[type="button"]:enabled  {
+position: absolute;
+top: 1.5%;		
+box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+border-bottom-color:#333;
+border:0.5px solid #fef4eb;
+background-color:#feecdc;
+border-radius:2px;
+color:#2275e7;
+font-size:1em;
+text-shadow:#b2e2f5 0 1px 0;
+
+}
+
+#btnCheck {
+left: 5px;
+width:60px;
+font-family: Segoe UI Symbol;	
+font-size: 0.85em;
+}
+#btnClear {
+left: 80px;
+width:40px;
+font-family: Segoe UI Symbol;
+font-size: 0.85em;
+}
+#btnUndo {
+right: 100px;
+width:40px;
+font-size: 0.85em;
+font-family: Segoe UI Symbol;	
+}
+#btnQV {
+right: 10px;
+width:70px;
+font-size: 0.85em;
+font-family: Segoe UI Symbol;	
+}
+#year {
+position: relative;		
+font-size: 0.85em;
+top: 25%;	
+color: #646160;	
+}
+#btnPrev, #btnNext {
+position: relative;	
+top: 20%;	
+
+}
+#radiobuttons {
+	position: absolute;	
+	left: 160px;
+	top: 1.75%;
+/* 	height: 20px; */
+    line-height:50%;	
+	font-family:'Arial Narrow', Arial, sans-serif;
+	font-size: 0.60em;	
+	font-weight: 200;
+	text-align: left;
+	color:#83807f;	
+}	
+#gapNavCal {
+    line-height:25%;
+	font-size:25%;
+}
+#tblYear{
+/*  top: 100px;*/
+table-layout: fixed;
+border-collapse: collapse;
+font-size: 0.85em;
+font-weight: normal;
+font-family: Rokkitt;
+width:100%;
+height:100%;
+text-align: center;
+
+}
+#tblMonth {
+table-layout: fixed;
+border-collapse: collapse;
+width: 97%;
+height: 98%;
+
+}
+.outerCell {
+border: 0.75px #79f965;
+vertical-align: top;
+
+}
+
+.innerCell {
+text-align: center;
+border: 0.5px solid;
+border-color:#D2D6D2;
+
+
+}
+th.weekDays {
+font-family:'Arial Narrow', Arial, sans-serif;
+border: 0.5px solid;  
+border-color:#D2D6D2;
+padding:3px 1px 3px 1px; 
+font-size: 0.75em;	
+font-weight: 300;	
+color:#83807f;
+}
+th.innerCell {
+font-weight: normal;
+font-size: 0.90em;
+color:#4573b3;
+background:#fefde9;
+}
+.hover {
+background: #add9f3;
+}
+.cover {
+background: #1793e0;
+}
+#tblMonth caption  {
+background: #fee5cd;
+color: #646160;
+}
+
+
+td .hideCell {
+visibility: hidden;
+display: none;
+}
