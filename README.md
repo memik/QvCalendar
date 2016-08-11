@@ -1,6 +1,6 @@
 # QvCalendar flex-Selections 
 -----------------------------------------------
-Qliview 11 Extension Object 
+Qlikview 11 Extension Object 
 -----------------------------------------------
 V1.1 release: WeekStart option has been added.
 
