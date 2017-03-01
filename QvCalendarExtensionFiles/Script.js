@@ -4,6 +4,8 @@
 
 // V1.1 WeekStart Option has been added on 04.Aug.2016  
 
+// ---- Fixed  - Error : calendar disappearing after switching pages 03.01.2017 ---------------------------
+
 var myDate = new Date();
 var arDay = ["","","","","","",""];
 var arMonth = ["","","","","","","","","","","",""];
@@ -176,6 +178,7 @@ function addWeek(r, wd, cM)
 function getSerialDateNumber(d) {
 
     var baseDate = new Date(1900,0,1);
+	baseDate.setUTCHours(00,00,00);
 	var mydate=new Date(d);
 	mydate.setUTCHours(23,59,59);
     var oneDay = 86400000;
@@ -188,6 +191,7 @@ function getSerialDateNumber(d) {
  function getFormattedDate (dateNum) {
 	var oneDay = 86400000;
 	var baseDate = new Date(1900,0,1);
+	baseDate.setUTCHours(00,00,00);
  	var mydate= new Date(baseDate.getTime() - oneDay + (dateNum -1)*oneDay);
     return mydate;
  }
@@ -269,6 +273,15 @@ Qva.AddExtension("QvCalendar", function() {
 		}	
 		var errMsg = "";
 		var arQvSelection =[];
+// -------------- fixed part1 - error : object disapparing after page switch 01.03.2017 ---------------------------- 
+		var sheetID, intSheetName, curSheetName;
+		sheetID = document.getElementsByClassName("selectedtab");
+		intSheetName = sheetID[0].querySelector("a").querySelector("span").innerHTML;
+		function getSheetName(){
+			sheetName = sheetID[0].querySelector("a").querySelector("span").innerHTML;
+			return sheetName;		
+		}
+// ------------------ fixed part1 --------------------------------------------------------------------------------		
 
 		function setSelectDatesOnQV(){
 			var arrSelDt = arSelectDates;
@@ -302,6 +315,18 @@ Qva.AddExtension("QvCalendar", function() {
 
 function loadJqEvents() {
 	$(function() {
+// -------------- fixed part2 - error: object disapparing after page switch 01.03.2017 ---------------------------- 		
+		$("span").click(function(event) {
+			setTimeout(function(){
+				curSheetName = getSheetName();
+				if ( intSheetName = curSheetName ) {
+					clrSelections();
+					rmvClass();
+					btnCheckFlag = false;
+				}
+			}, 1);
+		});
+//---------------------------------- fixed part2------------------------------------------------------------------------		
 		$("td.innerCell").click( function() {
 			if ( $( this ).hasClass( "hover" )) { $(this).removeClass("hover");} else {if(!$( this ).hasClass( "cover" )) {$(this).addClass("hover");} };
 		});
