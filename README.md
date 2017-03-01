@@ -4,6 +4,8 @@ Qlikview 11 Extension Object
 -----------------------------------------------
 V1.1 release: WeekStart option has been added.
 
+Fixed Error : Calendar disappearing after switching between tabs 01.03.2017
+
 ## Description
 This object extension makes it easy to make calendar selections in qlikview more particularly when multi-range selections is needed. 
 
